@@ -1,0 +1,34 @@
+header{
+    font-family: 'copperplate', serif;
+    background-color: #722323;
+    color: #FF9587;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #FFECCC;
+    margin: 2;
+    font-family: 'copperplate', serif;
+}
+
+.topnav {
+    display: flex;
+    gap: 15px;
+}
+
+.topnav a {
+    color: #BA487F;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.topnav a.active, .topnav a:hover {
+    background: #FF9587;
+    color: #fff;
+}
