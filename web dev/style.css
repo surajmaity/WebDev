@@ -3,15 +3,22 @@ header{
     background-color: #722323;
     color: #FF9587;
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #FFECCC;
-    margin: 2;
+    margin: 0;
     font-family: 'copperplate', serif;
 }
 
@@ -31,4 +38,49 @@ body{
 .topnav a.active, .topnav a:hover {
     background: #FF9587;
     color: #fff;
+}
+
+/* Add a container for body content to control indentation */
+.main-content {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 24px;
+    background: none;
+    box-sizing: border-box;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #23272f;
+    color: #f3f3f3;
+}
+
+body.dark-mode header {
+    background-color: #181a20;
+    color: #FFB6B6;
+}
+
+body.dark-mode .topnav a {
+    color: #FFB6B6;
+}
+
+body.dark-mode .topnav a.active, body.dark-mode .topnav a:hover {
+    background: #BA487F;
+    color: #fff;
+}
+
+body.dark-mode .main-content {
+    background: none;
+    color: #f3f3f3;
+}
+
+/* button styles */
+button{
+    background-color: #644d4aca;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
 }
